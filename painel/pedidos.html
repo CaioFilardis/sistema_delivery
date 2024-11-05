@@ -1,42 +1,39 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Painel - Frango Louco</title>
+    <title>Painel - Pizzaria Maluca</title>
 
-    <!-- Links de Estilo -->
+    <!-- Links -->
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/fontawesome.css" />
     <link rel="stylesheet" href="../css/animate.css" />
     <link rel="stylesheet" href="../css/main.css" />
-    <link rel="stylesheet" href="./css/painel.css">
+    <link rel="stylesheet" href="./css/painel.css" />
 
 </head>
-
 <body>
-
 
     <section class="bg-menu">
 
         <div class="menu-left">
 
             <div class="logo">
-                <img src="../img/logo02.png" width="180">
+                <img src="../img/logo.png" width="100" />
             </div>
 
             <div class="menus">
 
                 <a href="./home.html" class="menu-item">
-                    <i class="fas fa-home"></i> Inicio
+                    <i class="fas fa-home"></i> Início
                 </a>
 
                 <a href="./pedidos.html" class="menu-item active">
                     <i class="fas fa-utensils"></i> Pedidos
                 </a>
 
-                <a href="#" class="menu-item">
+                <a href="./cardapio.html" class="menu-item">
                     <i class="fas fa-book-open"></i> Cardápio
                 </a>
 
@@ -52,12 +49,10 @@
                     <i class="fas fa-chart-line"></i> Relatório
                 </a>
 
+            </div><!-- menus -->
 
-            </div>
+        </div><!-- menu-left -->
 
-        </div>
-
-        <!-- Menu do pedido -->
         <div class="conteudo">
 
             <div class="menu-top">
@@ -73,27 +68,25 @@
 
                             <div class="container-right">
                                 <div class="container-dados">
-                                    <p>Frango Louco</p>
-                                    <span>frango.louco@hotmail.com</span>
+                                    <p>Pizzaria Maluca</p>
+                                    <span>pizzariamaluca@contato.com</span>
                                 </div>
-                                <a href="#" class="btn btn-white-btn-sm">
+                                <a href="#" class="btn btn-white btn-sm">
                                     <i class="fas fa-sign-out-alt"></i>&nbsp; Sair
                                 </a>
                             </div>
 
                         </div>
                     </div>
-
-                </div>
+                </div><!-- container -->
             </div><!-- menu-top -->
 
-            <!-- Status & Listagem dos pedidos -->
             <div class="conteudo-inner">
                 <div class="container">
                     <div class="row">
-                        <!-- Menu Pedidos -->
+
                         <div class="col-12">
-                            <div class="menus-pedidos">
+                            <div class="menus-pedido">
 
                                 <a href="#" class="btn btn-white btn-sm active">
                                     <i class="far fa-dot-circle"></i> Pendentes
@@ -107,21 +100,20 @@
 
                                 <a href="#" class="btn btn-white btn-sm">
                                     <i class="far fa-clock"></i> Em preparo
-                                    <span class="badge-total-pedidos">2</span>
+                                    <span class="badge-total-pedidos">1</span>
                                 </a>
 
                                 <a href="#" class="btn btn-white btn-sm">
-                                    <i class="fas fa-motorcycle"></i> Em Entrega
-
+                                    <i class="fas fa-motorcycle"></i> Em entrega
                                 </a>
 
                                 <a href="#" class="btn btn-white btn-sm">
                                     <i class="far fa-check-circle"></i> Concluído
-
                                 </a>
-                            </div>
+
+                            </div><!-- menus-pedido -->
                         </div>
-                        <!-- lista-pedidos -->
+
                         <div class="col-12">
                             <div class="row lista-pedidos mt-5">
 
@@ -130,26 +122,17 @@
 
                                         <div class="card-pedido-header">
                                             <div class="dropdown">
-                                                <button class="btn btn-white btn-sm dropdown-toggle active"
-                                                    type="button" data-bs-toggle="dropdown" aria-expanded="false"
-                                                    id="menuAcoes">
+                                                <button class="btn btn-white btn-sm dropdown-toggle active" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="menuAcoes">
                                                     Pendente
                                                 </button>
                                                 <div class="dropdown-menu" aria-labelledby="menuAcoes">
-                                                    <a href="#" class="dropdown-item">Mover para <b>Aceito</b> <i
-                                                            class="far fa-thumbs-up"></i></a>
-                                                    <a href="#" class="dropdown-item">Mover para <b>Em preparo</b> <i
-                                                            class="far fa-clock"></i></a>
-                                                    <a href="#" class="dropdown-item">Mover para <b>Em entrega</b> <i
-                                                            class="fas fa-motorcycle"></i></a>
-                                                    <a href="#" class="dropdown-item">Mover para <b>Concluído</b> <i
-                                                            class="far fa-check-circle"></i></a>
-                                                    <a href="#" class="dropdown-item">Recusar Pedido <i
-                                                            class="far fa-times-circle"></i></a>
+                                                    <a class="dropdown-item" href="#">Mover para <b>Aceito</b> <i class="far fa-thumbs-up"></i></a>
+                                                    <a class="dropdown-item" href="#">Mover para <b>Em preparo</b> <i class="far fa-clock"></i></a>
+                                                    <a class="dropdown-item" href="#">Mover para <b>Em entrega</b> <i class="fas fa-motorcycle"></i></a>
+                                                    <a class="dropdown-item" href="#">Mover para <b>Concluído</b> <i class="far fa-check-circle"></i></a>
+                                                    <a class="dropdown-item" href="#">Recusar Pedido <i class="far fa-times-circle"></i></a>
                                                 </div>
-
-                                            </div><!-- dropdown -->
-
+                                            </div>
                                             <p class="numero-pedido mt-2">#1</p>
                                         </div>
 
@@ -157,7 +140,7 @@
 
                                             <div class="card-pedido-body mt-3">
                                                 <p class="info-pedido">
-                                                    <i class="fas fa-user"></i> Caio Filardis
+                                                    <i class="fas fa-user"></i> Weverton Lima
                                                 </p>
                                                 <p class="info-pedido">
                                                     <i class="fas fa-motorcycle"></i> Entrega
@@ -174,36 +157,28 @@
                                                 <p class="horario-pedido">Recebido há 33 minutos</p>
                                                 <p class="total-pedido"><b>R$ 143,50</b></p>
                                             </div>
-                                        </div> <!-- card-content -->
 
-                                    </div>
-                                </div><!-- col-3 -->
+                                        </div>
+
+                                    </div><!-- card-pedido -->
+                                </div>
 
                                 <div class="col-3">
                                     <div class="card card-pedido">
 
                                         <div class="card-pedido-header">
                                             <div class="dropdown">
-                                                <button class="btn btn-white btn-sm dropdown-toggle active"
-                                                    type="button" data-bs-toggle="dropdown" aria-expanded="false"
-                                                    id="menuAcoes">
+                                                <button class="btn btn-white btn-sm dropdown-toggle active" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="menuAcoes">
                                                     Pendente
                                                 </button>
                                                 <div class="dropdown-menu" aria-labelledby="menuAcoes">
-                                                    <a href="#" class="dropdown-item">Mover para <b>Aceito</b> <i
-                                                            class="far fa-thumbs-up"></i></a>
-                                                    <a href="#" class="dropdown-item">Mover para <b>Em preparo</b> <i
-                                                            class="far fa-clock"></i></a>
-                                                    <a href="#" class="dropdown-item">Mover para <b>Em entrega</b> <i
-                                                            class="fas fa-motorcycle"></i></a>
-                                                    <a href="#" class="dropdown-item">Mover para <b>Concluído</b> <i
-                                                            class="far fa-check-circle"></i></a>
-                                                    <a href="#" class="dropdown-item">Recusar Pedido <i
-                                                            class="far fa-times-circle"></i></a>
+                                                    <a class="dropdown-item" href="#">Mover para <b>Aceito</b> <i class="far fa-thumbs-up"></i></a>
+                                                    <a class="dropdown-item" href="#">Mover para <b>Em preparo</b> <i class="far fa-clock"></i></a>
+                                                    <a class="dropdown-item" href="#">Mover para <b>Em entrega</b> <i class="fas fa-motorcycle"></i></a>
+                                                    <a class="dropdown-item" href="#">Mover para <b>Concluído</b> <i class="far fa-check-circle"></i></a>
+                                                    <a class="dropdown-item" href="#">Recusar Pedido <i class="far fa-times-circle"></i></a>
                                                 </div>
-
-                                            </div><!-- dropdown -->
-
+                                            </div>
                                             <p class="numero-pedido mt-2">#1</p>
                                         </div>
 
@@ -211,7 +186,7 @@
 
                                             <div class="card-pedido-body mt-3">
                                                 <p class="info-pedido">
-                                                    <i class="fas fa-user"></i> Caio Filardis
+                                                    <i class="fas fa-user"></i> Weverton de Lima Teste teste teste
                                                 </p>
                                                 <p class="info-pedido">
                                                     <i class="fas fa-motorcycle"></i> Entrega
@@ -228,15 +203,17 @@
                                                 <p class="horario-pedido">Recebido há 33 minutos</p>
                                                 <p class="total-pedido"><b>R$ 143,50</b></p>
                                             </div>
-                                        </div> <!-- card-content -->
 
-                                    </div>
-                                </div><!-- col-3 -->
+                                        </div>
 
-                            </div><!-- row lista-pedidos -->
+                                    </div><!-- card-pedido -->
+                                </div>
+
+                            </div>
                         </div>
-                    </div><!-- row -->
-                </div><!-- container -->
+
+                    </div>
+                </div> <!-- container -->
             </div><!-- conteudo-inner -->
 
         </div><!-- conteudo -->
@@ -244,18 +221,16 @@
     </section><!-- bg-menu -->
 
 
-    <!-- Modal Detalhes Pedido -->
+    <!-- Modal -->
     <div id="modalDetalhes" class="modal fade" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-
                 <div class="modal-header">
-                    <h5 class="modal-title">#1  <span class="horario-pedido">Recebido há 33 minutos</span></h5>
-                    <button class="btn btn-white btn-sm" type="button" data-bs-dismiss="modal" araial-label="Close">
-                        <i class="fas fa-times"></i>&nbsp; Fechar
+                    <h5 class="modal-title">#1 <span class="horario-pedido">Recebido há 33 minutos</span></h5>
+                    <button class="btn btn-white btn-sm" type="button" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times"></i>&nbsp; Fechar 
                     </button>
-                </div><!-- modal-header -->
-
+                </div>
                 <div class="modal-body">
 
                     <div class="container-dados-pedido pt-1">
@@ -268,8 +243,8 @@
                                     </div>
                                     <div class="infos pr-0">
                                         <div class="d-flex">
-                                            <p class="name mb-0"><b>Caio Filardis</b></p>
-                                            <span class="text mb-0">(21) 99529-1891</span>
+                                            <p class="name mb-0"><b>Weverton Lima</b></p>
+                                            <span class="text mb-0">(99) 99107-0707</span>
                                         </div>
                                         <div class="d-flex">
                                             <span class="info-pedido mb-0">
@@ -280,8 +255,8 @@
                                             </span>
                                         </div>
                                     </div>
-                                </div><!-- card-address -->
-                            </div><!-- col-12 -->
+                                </div>
+                            </div>
 
                             <div class="col-12">
                                 <div class="card card-address cursor-default mt-2">
@@ -290,39 +265,34 @@
                                     </div>
                                     <div class="infos pr-0">
                                         <p class="name mb-0"><b>Dinheiro</b></p>
-                                        <span class="text mb-0">Troco para R$ 50,00</span>
-                                    </div><!-- infos -->
-                                </div><!-- card-address -->
-                            </div><!-- col-12 -->
+                                        <span class="text mb-0">Troco para: R$ 50,00</span>
+                                    </div>
+                                </div>
+                            </div>
 
                             <div class="col-12">
                                 <div class="card card-address mt-2">
-
                                     <div class="img-icon-details">
                                         <i class="fas fa-map-marked-alt"></i>
                                     </div>
-
                                     <div class="infos pr-0">
-                                        <p class="name mb-0"><b>Rua pacífico pereiro, Jardim Sulacap</b></p>
-                                        <span class="text mb-0">Cidade-RJ / CEP: 21741-160</span>
-                                    </div><!-- infos -->
-
+                                        <p class="name mb-0"><b>Rua Olá Mundo, 123, Meu Bairro</b></p>
+                                        <span class="text mb-0">Cidade-SP / CEP: 12345-678</span>
+                                    </div>
                                     <div class="icon-edit">
                                         <i class="fas fa-location-arrow"></i>
                                     </div>
-                                </div><!-- card-address -->
-                            </div><!-- col-12 -->
+                                </div>
+                            </div>
 
-                        </div><!-- row -->
-
+                        </div>
                     </div><!-- container-dados-pedido -->
 
                     <div class="container-itens-pedido carrinho">
 
-                        <div id="itens-pedido">
+                        <div id="itensPedido">
 
                             <div class="card-item mb-2 pr-0">
-
                                 <div class="container-detalhes">
                 
                                     <div class="detalhes-produto">
@@ -341,10 +311,9 @@
                                             <p class="obs-opcional mb-0">- Observação para enviar talheres de plastico</p>
                                         </div>
                 
-                                    </div><!-- detalhes-produto -->
+                                    </div>
                 
-                                </div><!-- container-detalhes -->
-
+                                </div>
                             </div>
                 
                             <div class="card-item mb-2 pr-0">
@@ -362,10 +331,9 @@
                                             <p class="price-opcional mb-0">+ R$ 8,90</p>
                                         </div>
                 
-                                    </div><!-- detalhes-produto -->
+                                    </div>
                 
-                                </div><!-- container-detalhes -->
-
+                                </div>
                             </div>
                 
                             <div class="card-item mb-2">
@@ -386,24 +354,20 @@
                                 </div>
                             </div>
 
-                        </div><!-- itens-pedido -->
-                        
-                        <div class="footer-btn mt-3">
-                            <button type="button" class="btn btn-yellow btn-sm"> Aceitar Pedido</button>
                         </div>
+
+                        <div class="footer-btn mt-3">
+                            <button type="button" class="btn btn-yellow btn-sm">Aceitar Pedido</button>
+                        </div>
+
                     </div><!-- container-itens-pedido -->
 
                 </div><!-- modal-body -->
-
             </div><!-- modal-content -->
-        </div><!-- modal-dialog -->
-    </div><!-- modal fade -->
-
-
+        </div><!-- odal-dialog -->
+    </div><!-- modal -->
 
     <script type="text/javascript" src="../js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="../js/cardapio.js"></script>
 
 </body>
-
 </html>
